@@ -35,9 +35,16 @@ const ProductForm = ({ productToEdit = {}, isEdit = false }) => {
     event.preventDefault();
     if (isEdit) {
       dispatch(updateProduct({ id: productToEdit.id, product: product }));
+      isEdit(false);
     } else {
       dispatch(createProduct({ ...product, id: nanoid() }));
     }
+    setProduct({
+      title: '',
+      price: '',
+      description: '',
+      category: '',
+    });
   };
   return (
     <form onSubmit={handleSubmit}>

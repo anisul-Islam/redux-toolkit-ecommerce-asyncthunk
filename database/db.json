@@ -15,18 +15,11 @@
       "category": "beauty"
     },
     {
-      "title": "pencil",
-      "price": "15",
-      "description": "beautiful pen",
-      "category": "beauty",
-      "id": "3T7E3p2Lbq6JAvcQi8Ani"
-    },
-    {
-      "id": "hTF_CPL9C1fO-RSoNZWgY",
-      "title": "product6",
+      "title": "product7",
       "price": "15",
       "description": "aaaaaa",
-      "category": "beauty"
+      "category": "beauty",
+      "id": "hTF_CPL9C1fO-RSoNZWgY"
     }
   ]
 }
