@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 import { createProduct, updateProduct } from './productSlice';
 
-const ProductForm = ({ productToEdit = {}, isEdit = false }) => {
+const ProductForm = ({ productToEdit = {}, isEdit = false, resetForm }) => {
   const dispatch = useDispatch();
   const [product, setProduct] = useState({
     title: '',
@@ -35,7 +35,7 @@ const ProductForm = ({ productToEdit = {}, isEdit = false }) => {
     event.preventDefault();
     if (isEdit) {
       dispatch(updateProduct({ id: productToEdit.id, product: product }));
-      isEdit(false);
+      resetForm();
     } else {
       dispatch(createProduct({ ...product, id: nanoid() }));
     }

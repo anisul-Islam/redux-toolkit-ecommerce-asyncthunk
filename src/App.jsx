@@ -4,16 +4,21 @@ import ProductForm from './features/products/ProductForm';
 
 const App = () => {
   const [isEdit, setIsEdit] = useState(false);
-  const [productToEdit, setProductToEdit] = useState({});
+  const [productToEdit, setProductToEdit] = useState(null);
 
   const handleSetProductToEdit = (product) => {
     setProductToEdit(product);
     setIsEdit(true);
   };
 
+  const resetForm = () => {
+    setProductToEdit(null);
+    setIsEdit(false);
+  }
+
   return (
     <div>
-      <ProductForm productToEdit={productToEdit} isEdit={isEdit} />
+      <ProductForm productToEdit={productToEdit} isEdit={isEdit} resetForm={resetForm} />
       <ProductListView onHandleSetProductToEdit={handleSetProductToEdit} />
     </div>
   );

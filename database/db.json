@@ -8,11 +8,11 @@
       "category": "beauty"
     },
     {
-      "id": "2",
       "title": "Eyeshadow Palette with Mirror",
+      "price": "50",
       "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-      "price": 19.99,
-      "category": "beauty"
+      "category": "beauty",
+      "id": "2"
     },
     {
       "title": "product7",
@@ -20,6 +20,13 @@
       "description": "aaaaaa",
       "category": "beauty",
       "id": "hTF_CPL9C1fO-RSoNZWgY"
+    },
+    {
+      "title": "iphone 16",
+      "price": "25",
+      "description": "aaaa",
+      "category": "phone",
+      "id": "POypTfqub9EWLK3ZNr9Ua"
     }
   ]
 }
